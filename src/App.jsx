@@ -6,12 +6,10 @@ import { useState } from "react";
 function App() {
   return (
     <>
-    <Header/>
-    <body>
-      <main id='main'>
+      <Header />
+      <main id="main">
         <LoginForm />
       </main>
-    </body>
     </>
   );
 }

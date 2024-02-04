@@ -38,6 +38,7 @@ code {
   background-color: black;
   color: whitesmoke;
   text-align: center;
+  font-size: 32px;
 }
 
 #main {
@@ -49,7 +50,7 @@ code {
 }
 
 #loginLabel {
-  font-weight: 500;
+  font-weight: bold;
   font-family: sans-serif;
   padding-bottom: 8px;
 }
