@@ -1,14 +1,18 @@
-import LoginForm from './LoginForm';
-import './App.css';
-import { useState } from 'react';
-
+import LoginForm from "./LoginForm";
+import "./App.css";
+import Header from "./Header";
+import { useState } from "react";
 
 function App() {
-
   return (
-<main>
-  <LoginForm/>
-</main>
+    <>
+    <Header/>
+    <body>
+      <main id='main'>
+        <LoginForm />
+      </main>
+    </body>
+    </>
   );
 }
 

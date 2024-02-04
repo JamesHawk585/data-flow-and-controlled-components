@@ -5,9 +5,55 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: azure;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#loginForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30vw;
+  padding: 8px;
+  border-radius: 8px;
+  background-color:grey ;
+}
+
+#submitButton {
+  align-self: flex-end;
+  margin-top: 8px;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#header {
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+}
+
+#main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 80px;
+}
+
+#loginLabel {
+  font-weight: 500;
+  font-family: sans-serif;
+  padding-bottom: 8px;
+}
+
+#passwordInput {
+  margin: 8px;
 }
