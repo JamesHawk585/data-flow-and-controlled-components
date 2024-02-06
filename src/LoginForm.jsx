@@ -24,7 +24,7 @@ const LoginForm = () => {
 // question yes : no
 // ? "": ""
 
-  const passwordRulesElements = Object.entries(passwordRules).map(([str, func]) => <li key='str'>{func(password) ? "✅": "❌"}    {str}</li>)
+  const passwordRulesElements = Object.entries(passwordRules).map(([str, func]) => <li key={str}>{func(password) ? "✅": "❌"}    {str}</li>)
 
   const handleUserNameSubmit = (e) => {
     setUsername(e.target.value);
