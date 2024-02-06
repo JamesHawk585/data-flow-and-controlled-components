@@ -13,7 +13,7 @@ code {
     monospace;
 }
 
-#loginForm {
+.loginForm {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +53,7 @@ code {
   font-weight: bold;
   font-family: sans-serif;
   padding-bottom: 8px;
+  text-align: left;
 }
 
 #passwordInput {
