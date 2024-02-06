@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const LoginForm = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [users, setUsers] = useState([])
 
   const passwordString = password;
 
@@ -46,7 +47,16 @@ const LoginForm = () => {
     console.log(userdataObject);
   };
 
-  // 2023_08_16_Controlled_Components 40:02
+  const determineIfUsernameIsUnique = () => {
+    useEffect(() => {
+        fetch(API)
+        .then((r) => r.json())
+        .then(setUsers)
+    })
+    // fetch and update users state with all user names.
+    // use onchange event listener to determine if the string in passowrd matches 
+  }
+
 
   return (
     <>
@@ -71,6 +81,7 @@ const LoginForm = () => {
       <section>
         <header>
           <div>
+            <li>{determineIfUsernameIsUnique() ? "✅" : "❌"}Username is unique</li>
             <ul>{passwordRulesElements}</ul>
           </div>
         </header>
